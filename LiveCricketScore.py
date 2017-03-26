@@ -10,7 +10,7 @@ class LiveScore:
         downloadedFile = urllib2.urlopen(self.scoreUrl)
         with open(self.filePath,'wb') as output:
             output.write(downloadedFile.read())
-        return self
+        #return self
             
     def showScore(self):
         self.score=''
